@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="banner" class="banner">
+        <h1>les soldes se terminent dans <span id="countdown">1O</span> sec</h1>
+    </div>
+
+    <script>
+        window.setInterval(countItDown, 1000);
+
+        let countdown = document.getElementById('countdown');
+        let seconds = 10;
+
+        function countItDown() {
+            countdown.textContent = seconds;
+            if (seconds >= 0) {
+                seconds -= 1;
+                console.log("les soldes se terminent dans " + seconds + " sec");
+            }
+        };
+    </script>
+</body>
+
+</html>
