@@ -38,7 +38,7 @@ setTimeout(helloWorld, 2000);
 let timer = setInterval(helloWorld, 2000);
 
 function deleteParagraph() {
-    clearInterval(timer);
+    clearInterval(timer, 5000);
 }
 
 // Au lieu de cliquer sur le bouton, l 'intervalle sera effacé (c'
